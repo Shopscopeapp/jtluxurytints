@@ -35,6 +35,3 @@ coverage/
 # Cache
 .cache
 .parcel-cache
-
-# Large image files moved to temp directory
-temp-images/
