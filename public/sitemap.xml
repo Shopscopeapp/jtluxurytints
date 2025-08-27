@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- Homepage -->
+  <url>
+    <loc>https://jtluxurytints.com.au/</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://jtluxurytints.com.au/images/IMG_0704.jpg</image:loc>
+      <image:title>JT Luxury Tints - Premium Automotive Window Tinting Melbourne</image:title>
+      <image:caption>Melbourne's premier automotive window tinting specialists</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Services Section -->
+  <url>
+    <loc>https://jtluxurytints.com.au/#services</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Benefits Section -->
+  <url>
+    <loc>https://jtluxurytints.com.au/#benefits</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Gallery Section -->
+  <url>
+    <loc>https://jtluxurytints.com.au/#gallery</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://jtluxurytints.com.au/images/IMG_0464.jpg</image:loc>
+      <image:title>Professional Window Tinting Work</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://jtluxurytints.com.au/images/IMG_0466.jpg</image:loc>
+      <image:title>Luxury Car Window Tinting</image:title>
+    </image:image>
+  </url>
+
+  <!-- About Section -->
+  <url>
+    <loc>https://jtluxurytints.com.au/#about</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Contact Section -->
+  <url>
+    <loc>https://jtluxurytints.com.au/#contact</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+</urlset> 

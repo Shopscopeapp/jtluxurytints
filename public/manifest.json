@@ -1,0 +1,25 @@
+{
+  "name": "JT Luxury Tints - Premium Automotive Window Tinting Melbourne",
+  "short_name": "JT Luxury Tints",
+  "description": "Melbourne's premier automotive window tinting specialists. Carbon & nano ceramic tints for luxury vehicles.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#f5730f",
+  "orientation": "portrait-primary",
+  "categories": ["automotive", "business", "professional"],
+  "lang": "en-AU",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+} 
