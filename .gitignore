@@ -35,11 +35,3 @@ coverage/
 # Cache
 .cache
 .parcel-cache
-
-# Large image files that can cause build issues
-public/images/*.jpg
-public/images/*.jpeg
-public/images/*.png
-public/images/*.gif
-public/images/*.webp
-public/images/*.svg
