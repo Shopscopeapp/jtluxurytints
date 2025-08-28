@@ -6,19 +6,20 @@ import { FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa'
 
 const Hero = () => {
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden" style={{ backgroundColor: '#0a0a0a' }}>
-      {/* Background */}
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <div 
           className="absolute inset-0 z-10" 
           style={{ 
-            background: 'linear-gradient(135deg, #0a0a0a 0%, #0a0a0a 90%, rgba(245, 115, 15, 0.2) 100%)'
+            background: 'linear-gradient(135deg, rgba(10, 10, 10, 0.9) 0%, rgba(10, 10, 10, 0.7) 50%, rgba(10, 10, 10, 0.8) 100%)'
           }} 
         />
         <div 
-          className="w-full h-full" 
+          className="w-full h-full bg-cover bg-center bg-no-repeat" 
           style={{ 
-            background: 'linear-gradient(135deg, #0a0a0a 0%, #0a0a0a 80%, rgba(245, 115, 15, 0.3) 100%)'
+            backgroundImage: `url('/images/IMG_0707.jpg')`,
+            backgroundPosition: 'center center'
           }} 
         />
       </div>
