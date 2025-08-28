@@ -3,19 +3,23 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa'
-import Image from 'next/image'
 
 const Hero = () => {
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden" style={{ backgroundColor: '#0a0a0a' }}>
+      {/* Background */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-gradient-to-r from-obsidian/90 via-obsidian/70 to-obsidian/90 z-10" />
-        <div className="w-full h-full bg-gradient-to-b from-obsidian/50 to-obsidian bg-cover bg-center bg-no-repeat" 
-             style={{ 
-               backgroundImage: `url('/images/IMG_0704.jpg')`,
-               backgroundPosition: 'center center'
-             }} 
+        <div 
+          className="absolute inset-0 z-10" 
+          style={{ 
+            background: 'linear-gradient(135deg, #0a0a0a 0%, #0a0a0a 90%, rgba(245, 115, 15, 0.2) 100%)'
+          }} 
+        />
+        <div 
+          className="w-full h-full" 
+          style={{ 
+            background: 'linear-gradient(135deg, #0a0a0a 0%, #0a0a0a 80%, rgba(245, 115, 15, 0.3) 100%)'
+          }} 
         />
       </div>
 
@@ -77,7 +81,7 @@ const Hero = () => {
               <FaMapMarkerAlt className="text-primary text-xl" />
               <span className="text-lg">Melbourne Wide</span>
             </div>
-            <div className="flex items-center justify-center space-x-3 text-white">
+            <div className="flex items-center justify-center space-x-2 text-white">
               <FaPhone className="text-primary text-xl" />
               <span className="text-lg">24/7 Support</span>
             </div>

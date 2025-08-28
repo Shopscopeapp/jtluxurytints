@@ -3,7 +3,6 @@
 import React, { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { FaPhone, FaBars, FaTimes } from 'react-icons/fa'
-import Image from 'next/image'
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -44,13 +43,10 @@ const Header = () => {
             className="flex items-center"
           >
             <a href="#home" className="flex items-center">
-              <Image
+              <img
                 src="/images/JT_Logo_horizontal_gradient_white.png"
                 alt="JT Luxury Tints"
-                width={180}
-                height={50}
                 className="h-12 w-auto md:h-14"
-                priority
               />
             </a>
           </motion.div>
