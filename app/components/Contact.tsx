@@ -39,7 +39,7 @@ const Contact = () => {
     {
       icon: <FaPhone className="text-2xl text-primary" />,
       title: "Phone",
-      details: ["+61 400 000 000", "Available 7 days a week"]
+      details: ["0424 718 151", "Available 7 days a week"]
     },
     {
       icon: <FaEnvelope className="text-2xl text-primary" />,
@@ -288,14 +288,14 @@ const Contact = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
-                  href="tel:+61400000000"
+                  href="tel:0424718151"
                   className="btn-primary flex items-center justify-center space-x-2"
                 >
                   <FaPhone />
                   <span>Call Now</span>
                 </a>
                 <a
-                  href="https://wa.me/61400000000"
+                  href="https://wa.me/61424718151"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-secondary flex items-center justify-center space-x-2"

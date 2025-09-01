@@ -15,9 +15,9 @@ const Benefits = () => {
     },
     {
       icon: <FaThermometerHalf className="text-4xl text-primary" />,
-      title: "Heat Rejection",
-      description: "Reduce interior temperature by up to 60% for a more comfortable driving experience.",
-      stats: "60% Heat Rejection"
+      title: "IRR HEAT REJECTION",
+      description: "Reduce interior temperature by up to 96% for a more comfortable driving experience.",
+      stats: "96% Heat Rejection"
     },
     {
       icon: <FaEye className="text-4xl text-primary" />,
@@ -119,7 +119,7 @@ const Benefits = () => {
                 <a href="#contact" className="btn-primary text-center">
                   Get Free Quote
                 </a>
-                <a href="tel:+61400000000" className="btn-secondary text-center flex items-center justify-center space-x-2">
+                <a href="tel:0424718151" className="btn-secondary text-center flex items-center justify-center space-x-2">
                   <FaPhone />
                   <span>Call Now</span>
                 </a>

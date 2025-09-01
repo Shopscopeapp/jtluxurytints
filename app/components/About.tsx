@@ -139,7 +139,7 @@ const About = () => {
               <a href="#contact" className="btn-primary">
                 Get Started Today
               </a>
-              <a href="tel:+61424718151" className="btn-secondary flex items-center justify-center space-x-2">
+              <a href="tel:0424718151" className="btn-secondary flex items-center justify-center space-x-2">
                 <FaPhone />
                 <span>Call Now</span>
               </a>
@@ -200,7 +200,7 @@ const About = () => {
             </div>
             <div className="flex items-center space-x-3 text-gray-300">
               <FaPhone className="text-primary" />
-              <span>+61 400 000 000</span>
+              <span>0424 718 151</span>
             </div>
           </div>
         </motion.div>

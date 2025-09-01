@@ -6,19 +6,20 @@ import { FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa'
 
 const Hero = () => {
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden" style={{ backgroundColor: '#0a0a0a' }}>
-      {/* Background */}
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <div 
           className="absolute inset-0 z-10" 
           style={{ 
-            background: 'linear-gradient(135deg, #0a0a0a 0%, #0a0a0a 90%, rgba(245, 115, 15, 0.2) 100%)'
+            background: 'linear-gradient(135deg, rgba(10, 10, 10, 0.9) 0%, rgba(10, 10, 10, 0.7) 50%, rgba(10, 10, 10, 0.8) 100%)'
           }} 
         />
         <div 
-          className="w-full h-full" 
+          className="w-full h-full bg-cover bg-center bg-no-repeat" 
           style={{ 
-            background: 'linear-gradient(135deg, #0a0a0a 0%, #0a0a0a 80%, rgba(245, 115, 15, 0.3) 100%)'
+            backgroundImage: `url('/images/IMG_0707.jpg')`,
+            backgroundPosition: 'center center'
           }} 
         />
       </div>
@@ -53,7 +54,7 @@ const Hero = () => {
           >
             Professional carbon & nano ceramic window tinting for luxury vehicles.
             <br className="hidden md:block" />
-            Serving individuals, detailers, and dealerships across Melbourne.
+            Serving individuals, detailers, and dealerships across the city & state.
           </motion.p>
 
           <motion.div
@@ -65,7 +66,7 @@ const Hero = () => {
             <a href="#contact" className="btn-primary text-lg px-10 py-4">
               Get Free Quote
             </a>
-            <a href="tel:+61424718151" className="btn-secondary text-lg px-10 py-4 flex items-center space-x-2">
+            <a href="tel:0424718151" className="btn-secondary text-lg px-10 py-4 flex items-center space-x-2">
               <FaPhone />
               <span>Call Now</span>
             </a>

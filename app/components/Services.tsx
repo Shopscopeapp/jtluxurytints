@@ -3,6 +3,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { FaShieldAlt, FaSun, FaThermometerHalf, FaEye, FaCar, FaUsers } from 'react-icons/fa'
+import ImageSlider from './ImageSlider'
 
 const Services = () => {
   const carbonTints = [
@@ -14,11 +15,11 @@ const Services = () => {
   ]
 
   const nanoCeramicTints = [
-    { percentage: '10%', description: 'Ultimate Performance & Privacy' },
-    { percentage: '25%', description: 'Superior Heat Rejection' },
+    { percentage: '15%', description: 'Ultimate Performance & Privacy' },
+    { percentage: '20%', description: 'Superior Heat Rejection' },
     { percentage: '35%', description: 'Perfect Balance of Performance' },
     { percentage: '50%', description: 'Enhanced Comfort & Clarity' },
-    { percentage: '75%', description: 'Maximum Clarity with Protection' },
+    { percentage: '70%', description: 'Maximum Clarity with Protection' },
   ]
 
   const serviceTypes = [
@@ -107,10 +108,10 @@ const Services = () => {
             <div className="text-center mb-8">
               <FaShieldAlt className="text-5xl text-primary mx-auto mb-4" />
               <h3 className="text-3xl font-display font-bold text-white mb-4">
-                Carbon Window Tints
+                Carbon Window Tint
               </h3>
               <p className="text-gray-300">
-                Premium carbon film technology for superior performance and durability
+                Premium carbon window tint technology for superior performance and aesthetic
               </p>
             </div>
 
@@ -152,7 +153,7 @@ const Services = () => {
             <div className="text-center mb-8">
               <FaSun className="text-5xl text-primary mx-auto mb-4" />
               <h3 className="text-3xl font-display font-bold text-white mb-4">
-                Nano Ceramic Tints
+                Nano Ceramic
               </h3>
               <p className="text-gray-300">
                 Advanced nano-ceramic technology for maximum heat rejection and clarity
@@ -185,6 +186,11 @@ const Services = () => {
               ))}
             </div>
           </motion.div>
+        </div>
+
+        {/* Image Slider */}
+        <div className="mt-16">
+          <ImageSlider />
         </div>
 
         {/* CTA */}

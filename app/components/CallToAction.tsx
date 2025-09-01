@@ -44,30 +44,10 @@ const CallToAction = () => {
           </p>
         </motion.div>
 
-        {/* Urgency Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          viewport={{ once: true }}
-          className="bg-obsidian/50 backdrop-blur-sm rounded-2xl p-8 mb-12 text-center border border-primary/20"
-        >
-          <h3 className="text-2xl md:text-3xl font-display font-bold text-white mb-4">
-            🔥 Limited Time Offer
-          </h3>
-          <p className="text-gray-300 text-lg mb-6">
-            Book this month and receive a <span className="text-primary font-bold">FREE interior protection package</span> 
-            valued at $150 with any premium tinting service!
-          </p>
-          <div className="inline-block bg-primary/20 text-primary px-4 py-2 rounded-full text-sm font-semibold">
-            Offer expires end of month
-          </div>
-        </motion.div>
-
         {/* CTA Options */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           <motion.a
-            href="tel:+61400000000"
+            href="tel:0424718151"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
@@ -78,12 +58,12 @@ const CallToAction = () => {
             <h3 className="text-xl font-display font-bold text-white mb-2">Call Now</h3>
             <p className="text-gray-300 text-sm mb-4">Speak directly with our experts</p>
             <div className="bg-primary text-white px-4 py-2 rounded-lg text-sm font-semibold">
-              +61 400 000 000
+              0424 718 151
             </div>
           </motion.a>
 
           <motion.a
-            href="https://wa.me/61400000000"
+            href="https://wa.me/61424718151"
             target="_blank"
             rel="noopener noreferrer"
             initial={{ opacity: 0, y: 50 }}

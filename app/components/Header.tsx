@@ -76,7 +76,7 @@ const Header = () => {
             className="hidden md:flex items-center"
           >
             <a
-              href="tel:+61424718151"
+              href="tel:0424718151"
               className="btn-primary flex items-center space-x-2"
             >
               <FaPhone className="text-sm" />
@@ -113,7 +113,7 @@ const Header = () => {
                 </a>
               ))}
               <a
-                href="tel:+61424718151"
+                href="tel:0424718151"
                 className="btn-primary flex items-center justify-center space-x-2 mt-4"
               >
                 <FaPhone className="text-sm" />
