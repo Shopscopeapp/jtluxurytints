@@ -39,7 +39,7 @@ JT Luxury Tints specializes in professional automotive window tinting services f
 - **Language**: TypeScript
 - **Styling**: Tailwind CSS
 - **Animations**: Framer Motion
-- **Forms**: React Hook Form
+- **Forms**: React Hook Form + Formspree Integration
 - **Icons**: React Icons
 - **Fonts**: Inter & Montserrat from Google Fonts
 
@@ -48,7 +48,8 @@ JT Luxury Tints specializes in professional automotive window tinting services f
 - **Conversion Focused**: Multiple CTAs and lead generation forms
 - **Professional Gallery**: Showcase of tinting work
 - **Service Sections**: Detailed service offerings
-- **Contact Forms**: Separate forms for different customer types
+- **Contact Forms**: Formspree-powered forms with customer type selection
+- **Email Notifications**: Automatic email notifications for new quote requests
 - **Mobile Responsive**: Optimized for all devices
 - **SEO Optimized**: Meta tags, structured data, and semantic HTML
 
@@ -59,12 +60,18 @@ JT Luxury Tints specializes in professional automotive window tinting services f
    npm install
    ```
 
-2. **Run Development Server**:
+2. **Configure Formspree** (Required for contact form):
+   - See [FORMSPREE_SETUP.md](FORMSPREE_SETUP.md) for detailed setup instructions
+   - Create a free account at [https://formspree.io/](https://formspree.io/)
+   - Get your Form ID and update it in `app/components/Contact.tsx` (line 30)
+   - Replace `YOUR_FORM_ID` with your actual Formspree form ID
+
+3. **Run Development Server**:
    ```bash
    npm run dev
    ```
 
-3. **Build for Production**:
+4. **Build for Production**:
    ```bash
    npm run build
    npm start

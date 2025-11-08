@@ -23,12 +23,40 @@ const Contact = () => {
 
   const onSubmit = async (data: FormData) => {
     setIsSubmitting(true)
+    setSubmitStatus('idle')
+    
     try {
-      // Simulate form submission
-      await new Promise(resolve => setTimeout(resolve, 1000))
-      setSubmitStatus('success')
-      reset()
+      // Submit to Formspree
+      const response = await fetch('https://formspree.io/f/mblqrday', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: data.name,
+          email: data.email,
+          phone: data.phone,
+          vehicle: data.vehicle,
+          service: data.service,
+          customerType: data.customerType,
+          message: data.message,
+          _subject: `New Quote Request from ${data.name} (${data.customerType})`,
+        }),
+      })
+
+      if (response.ok) {
+        setSubmitStatus('success')
+        reset()
+        
+        // Hide success message after 5 seconds
+        setTimeout(() => {
+          setSubmitStatus('idle')
+        }, 5000)
+      } else {
+        setSubmitStatus('error')
+      }
     } catch (error) {
+      console.error('Form submission error:', error)
       setSubmitStatus('error')
     } finally {
       setIsSubmitting(false)
