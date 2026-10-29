@@ -1,89 +1,51 @@
-import type { Metadata } from 'next'
-import { Inter, Montserrat } from 'next/font/google'
+import type { Metadata, Viewport } from 'next'
+import { Archivo, Big_Shoulders_Display, IBM_Plex_Mono } from 'next/font/google'
 import React from 'react'
 import StructuredData from './components/StructuredData'
+import './styles/wipe.css'
 import './globals.css'
+import './styles/pages.css'
 
-const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
-const montserrat = Montserrat({ subsets: ['latin'], variable: '--font-montserrat' })
+const disp = Big_Shoulders_Display({ subsets: ['latin'], weight: ['500', '700', '800', '900'], variable: '--font-disp', display: 'swap' })
+const body = Archivo({ subsets: ['latin'], axes: ['wdth'], variable: '--font-body', display: 'swap' })
+const mono = IBM_Plex_Mono({ subsets: ['latin'], weight: ['400', '500'], variable: '--font-mono', display: 'swap' })
+
+const title = 'JT Luxury Tints · Paint · Stone · Glass Protection · Melbourne'
+const description =
+  'Paint protection film, stone benchtop film and commercial window tint in Melbourne. XPEL film, fitted by hand by Julian. Call 0424 718 151.'
 
 export const metadata: Metadata = {
-  title: 'JT Luxury Tints | Premium Automotive Window Tinting Melbourne',
-  description: 'Melbourne\'s premier automotive window tinting specialists. Carbon & nano ceramic tints for luxury vehicles. Professional service for individuals, detailers & dealerships.',
-  keywords: 'automotive window tinting, car tinting Melbourne, luxury car tinting, carbon window tint, nano ceramic tint, professional car tinting, dealership tinting services',
-  authors: [{ name: 'JT Luxury Tints' }],
-  creator: 'JT Luxury Tints',
-  publisher: 'JT Luxury Tints',
-  formatDetection: {
-    email: false,
-    address: false,
-    telephone: false,
-  },
   metadataBase: new URL('https://jtluxurytints.com.au'),
-  alternates: {
-    canonical: '/',
-  },
+  title,
+  description,
+  authors: [{ name: 'JT Luxury Tints' }],
+  formatDetection: { email: false, address: false, telephone: false },
   openGraph: {
-    title: 'JT Luxury Tints | Premium Automotive Window Tinting Melbourne',
-    description: 'Melbourne\'s premier automotive window tinting specialists. Carbon & nano ceramic tints for luxury vehicles.',
-    url: 'https://jtluxurytints.com.au',
+    title,
+    description,
+    url: '/',
     siteName: 'JT Luxury Tints',
     locale: 'en_AU',
     type: 'website',
-    images: [
-      {
-        url: '/og-image.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'JT Luxury Tints - Premium Automotive Window Tinting',
-      },
-    ],
+    images: [{ url: '/images/site/hsv.jpg', width: 1500, height: 2000, alt: 'HSV GTSR bonnet under XPEL paint protection film' }],
   },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'JT Luxury Tints | Premium Automotive Window Tinting Melbourne',
-    description: 'Melbourne\'s premier automotive window tinting specialists. Carbon & nano ceramic tints for luxury vehicles.',
-    images: ['/og-image.jpg'],
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
-    },
-  },
+  twitter: { card: 'summary_large_image', title, description, images: ['/images/site/hsv.jpg'] },
+  robots: { index: true, follow: true },
 }
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export const viewport: Viewport = { themeColor: '#0B0B0C', width: 'device-width', initialScale: 1 }
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${inter.variable} ${montserrat.variable}`}>
+    <html lang="en-AU" className={`${disp.variable} ${body.variable} ${mono.variable}`}>
       <head>
-        <link rel="canonical" href="https://jtluxurytints.com.au" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="theme-color" content="#f5730f" />
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-        <link rel="manifest" href="/manifest.json" />
         <meta name="geo.region" content="AU-VIC" />
         <meta name="geo.placename" content="Melbourne" />
-        <meta name="geo.position" content="-37.8136;144.9631" />
-        <meta name="ICBM" content="-37.8136, 144.9631" />
-        <meta name="mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
       </head>
-      <body className={`${inter.className} antialiased`}>
+      <body>
         <StructuredData />
         {children}
       </body>
     </html>
   )
-} 
+}
